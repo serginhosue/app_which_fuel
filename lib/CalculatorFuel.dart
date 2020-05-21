@@ -40,6 +40,8 @@ class _CalculatorFuelState extends State<CalculatorFuel> {
           _message = "Abasteça com Etanol";
           _messageColor = 0xFF00FF7F;
         });
+
+        _clearFields();
       }
 
 
@@ -47,7 +49,10 @@ class _CalculatorFuelState extends State<CalculatorFuel> {
     }
 
   }
-
+  void _clearFields(){
+    _controllerEtanol.text = "";
+    _controllerGasolina.text = "";
+  }
 
   @override
   Widget build(BuildContext context) {
